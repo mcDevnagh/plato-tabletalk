@@ -1,0 +1,23 @@
+[package]
+authors = ["Michael McDonagh"]
+name = "plato-tabletalk"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+log-panics = { version = "2.1", features = ["with-backtrace"] }
+openssl = { version = "0.10", features = ["vendored"] }
+regex = "1"
+reqwest = { version = "0.12.2", features = [
+	"native-tls",
+	"blocking",
+], default-features = false }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+scraper = "0.22"
+signal-hook = "0.3"
+toml = "0.8"

@@ -1,0 +1,6 @@
+# Link to webpage with links to ePUB files
+# Don't change this unless it stops working!
+url = "https://subscribe.pcspublink.com/websis/DigitalIssues/TBLT/2330"
+
+# The number of issues to download, starting with the most recent issue
+limit = 1
